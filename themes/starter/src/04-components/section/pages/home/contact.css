@@ -8,9 +8,8 @@
 
 .contact img {
   display: inline-block;
-  margin: 2rem 0;
+  margin: 2rem auto;
 }
-
 
 .contact__copy p {
   color: var(--blue);
