@@ -1,0 +1,105 @@
+{{ define "main" }}
+<p><a class="button button--spider" href="/contact-us/">Enquire Now</a></p>
+
+<div class="hero">
+  <div class="o-content">
+    <h2 class="hero__h">Delivery throughout UK and Europe</h2>
+    <p>GJ Bogmats – the UK’s leading specialist supplier of high-quality bog mats. Buy or hire our superior hardwood Bogmats, Crane Mats or Timber Mats, for your construction sites in the UK or worldwide. With years of experience, our knowledgeable, friendly team are on hand to give you advice on your specific project’s needs. <strong>Contact us today for your free quotation!</strong></p>
+    <p><a class="button" href="/contact-us/">Get A FREE Quote</a></p>
+  </div>
+</div>
+<nav class="nav nav--wo nav--sec">
+  {{ $currentPage := . }}
+  <ol class="o-list-bare nav__list">
+    {{ range .Site.Menus.secondary }}
+    <li>
+      <a class="{{ if or ($currentPage.IsMenuCurrent " secondary " .) ($currentPage.HasMenuCurrent "secondary " .) }}is-active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ol>
+</nav>
+<div class="contact o-content">
+  <img src="/assets/img/logo-notype.png" alt="GJ Mats logo">
+  <div class="flex50">
+    <div class="contact__copy">
+      <h2><b>Certified and Sustainable</b><br>Sources for Bog Mats</h2>
+      <p>Our bog mats are manufactured in a range of shapes and sizes to suit most applications. From temporary access roads at festivals, to stable bases for cranes and lifting equipment, from pipeline mats suitable for the most extreme conditions.</p>
+    </div>
+    <div class="contact__form">
+      <h2><b>Enquire</b> Today</h2>
+      <form name="contact" method="POST" netlify>
+        <div>
+          <label for="name">Name*</label>
+          <input type="text" id="name">
+          <label for="company">Company*</label>
+          <input type="text" id="company">
+        </div>
+        <label for="email">Email address*</label>
+        <input type="email" id="email">
+        <label for="tel">Telephone*</label>
+        <input type="tel" id="tel">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <button class="button" name="submit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="o-content">
+  <ul class="o-list-bare carousel">
+    <li>
+      <a href="#">
+        <img src="/assets/img/contact-01-pipeline.jpg" alt="Pipeline">
+        <p>Pipeline Protection</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="/assets/img/contact-02-crane-temp.jpg" alt="Crane on bogmat">
+        <p>Temporary Access Solutions Wales</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="/assets/img/contact-03-crane.jpg" alt="Crane">
+        <p>Crane mats</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="ko-mats">
+  <div class="o-content">
+    <h2><b>Official Distributor</b> for Ko Mats</h2>
+    <div class="flex">
+      <img src="/assets/img/logo-ko-mats.png" alt="Ko Mats logo">
+      <div>
+        <p>Our customer service, professionalism and flexibility have ensured that we retain a large number of satisfied, loyal customers who return to us again and again in the knowledge that no job is too big or too small for GJ Bogmats.</p>
+        <p><a class="button" href="/products/">See our range</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonial">
+  <div class="o-content flex">
+    <h2><span class="testimonial__quote">“</span><br><b>What our</b><br> clients say</h2>
+    <blockquote>“Great product and great service from these guys. We wanted heavy duty and that’s what we got. Give them a call and you’ll get what you need.”</blockquote>
+  </div>
+</div>
+<div class="video">
+  <div class="o-content video__content">
+    <h2><b>Stocks Available</b><br>Across the UK</h2>
+    <p>Our stocks of timber mats are held at major ports across the UK. We offer our customers the ability to purchase bog mats outright, or to hire them. We also offer a ‘Bog Mat Buy Back’ service for customers to return timber mats to us at the end of their projects</p>
+  </div>
+</div>
+<div class="clients">
+  <ul class="o-list-bare clients__list">
+    <li><img src="/assets/img/clients-01-ainscough.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-02-es3.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-03-laing.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-04-national-grid.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-05-network-rail.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-06-scottish-power.png" alt="logo"></li>
+    <li><img src="/assets/img/clients-07-wales-west.png" alt="logo"></li>
+  </ul>
+</div>
+{{ end }}

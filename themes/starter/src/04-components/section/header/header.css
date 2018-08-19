@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header__content {
+  color: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+.header__content a:link,
+.header__content a:visited {
+  color: black;
+  font-weight: bold;
+}
+
+.header__content a:hover {
+  text-decoration: underline;
+}

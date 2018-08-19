@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Home page contact section
+   ==========================================================================*/
+
+.contact {
+  display: grid;
+}
+
+.contact img {
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+
+.contact__copy p {
+  color: var(--blue);
+  padding-right: 1rem;
+}
+
+.contact__form form {
+  border: 1px solid var(--grey);
+  padding: 0.5rem;
+}
+
+.contact__form label {
+  margin: 0.1rem 0 0.3rem;
+}
+
+.contact__form input {
+  padding: 0.5rem 0.3rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  background-color: var(--grey-pale);
+  border: 1px solid var(--grey);
+}
+
+.contact__form textarea {
+  height: 6rem;
+  width: 100%;
+}

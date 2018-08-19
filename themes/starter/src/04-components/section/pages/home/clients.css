@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Home page clients
+   ==========================================================================*/
+
+.clients {
+  margin-bottom: 3rem;
+}
+
+.clients__list {
+  display: flex;
+}
+
+.clients__list > * {
+  border: 1px solid var(--grey);
+  border-left: 0 solid transparent;
+}

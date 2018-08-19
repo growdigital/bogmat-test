@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Nav
+   ==========================================================================*/
+
+.nav a {
+  padding: 0 .8rem 0 0;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* The ul/ol list within the nav */
+
+.nav__list {
+  display: flex;
+}
+
+/* White-out lists */
+
+.nav--wo {
+  background-color: var(--blue);
+}
+
+.nav--wo a:link,
+.nav--wo a:visited {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Header nav */
+
+.nav--header {
+  font-size: .85rem;
+  padding: 14px 0 11px 8px;
+}
+
+/* Secondary nav */
+
+.nav--sec .nav__list > * {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav--sec .nav__list a {
+  display: block;
+  font-weight: normal;
+  padding: 14px 0 11px 8px;
+}
+
+.nav--sec .nav__list li:nth-child(2) a {
+  background-color: var(--green);
+}
+
+.nav--sec .nav__list li:nth-child(3) a {
+  background-color: var(--green-pale);
+}
+
+.nav--sec .nav__list li:nth-child(4) a {
+  background-color: var(--yellow);
+}
+
+.nav--sec .nav__list > *:hover {
+  box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.nav--sec .nav__list a:hover {
+  text-decoration: none;
+}
+
+/* Footer nav */
+
+.nav--footer {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.nav--footer a:link,
+.nav--footer a:visited {
+  color: black;
+}

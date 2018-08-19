@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Home page video section
+   ==========================================================================*/
+
+.video {
+  background: center bottom no-repeat url("/assets/img/video-crane.jpg");
+  background-size: cover;
+  color: white;
+  min-height: 600px;
+}
+
+.video__content {
+  padding: 4rem 4rem 0 30%;
+  text-shadow: 0 0 4px black;
+}

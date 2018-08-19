@@ -1,0 +1,34 @@
+/* ==========================================================================
+   CSS variables
+   ========================================================================== */
+
+:root {
+  /* Colors
+     ======================================================================== */
+
+  --blue-dark: #0058ad;
+  --blue: #3651a8;
+  --green: #079b3d;
+  --green-pale: #0ea54f;
+  --green-lime: #8ec96b;
+  --blue-sky: #1774b2;
+  --yellow: #d1e301;
+  --grey: #ccc;
+  --grey-pale: #fafafa;
+
+  /**
+   * Files where color variables are found:
+   *
+   *  01-base.css:
+   *  --blue, --dark, --indigo, --lightest, --purple
+   *  02-type.css:
+   *  --gray, --light
+   */
+
+   /* Base variables, adapated from SUIT CSS
+     ======================================================================== */
+
+  --base_font: sans-serif;
+  --base_fontsize: 16px;
+  --base_lineheight: 1.5;
+}

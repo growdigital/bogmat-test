@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Home page testimonials
+   ==========================================================================*/
+
+.testimonial {
+  background-color: var(--blue-sky);
+  color: white;
+  padding: 3rem 0
+}
+
+.testimonial h2 {
+  margin-right: 3rem;
+  text-transform: uppercase;
+  width: 30rem;
+}
+
+.testimonial blockquote {
+  font-family: serif;
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.testimonial__quote {
+  display: block;
+  font-family: serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 0 -3rem;
+}

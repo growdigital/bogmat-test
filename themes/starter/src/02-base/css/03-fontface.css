@@ -1,0 +1,39 @@
+/**
+ * @font-face
+ * For reference see the most awesome @zachleat
+ * https://www.zachleat.com/web/comprehensive-webfonts/#fout-class
+ * https://www.zachleat.com/web-fonts/demos/fout-with-class-polyfill.html
+ */
+
+@font-face {
+  font-family: OpenSans;
+  src: url('/assets/fonts/opensans-regular.woff2') format('woff2'),
+       url('/assets/fonts/opensans-regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url('/assets/fonts/opensans-bold.woff2') format('woff2'),
+       url('/assets/fonts/opensans-bold.woff') format('woff');
+  font-weight: 700;
+}
+
+/**
+ * Web fonts loaded with CSS class selector 'fonts-loaded,
+ * added by fontfaceobserver, see fontfaceobserver.js
+ */
+
+body {
+  font-family: sans-serif;
+}
+
+.fonts-loaded body {
+  font-family: OpenSans, sans-serif;
+}
+
+.fonts-loaded strong,
+.fonts-loaded strong {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: 700;
+}
+

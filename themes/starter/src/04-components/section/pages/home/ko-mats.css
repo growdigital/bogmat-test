@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Home page KO Mats
+   ==========================================================================*/
+
+.ko-mats {
+  background: center bottom no-repeat url("/assets/img/ko-mats-truck.jpg");
+  background-size: cover;
+  min-height: 600px;
+}
+
+.ko-mats h2 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.ko-mats img {
+  display: block;
+  height: 100%;
+  margin-right: 3rem;
+  width: 80%;
+}
+
+.ko-mats p {
+  color: var(--blue);
+  text-shadow: 0 0 4px white;
+}
+
+.ko-mats p {
+  margin-bottom: 3rem;
+}

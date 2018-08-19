@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Shameful CSS
+   ========================================================================== */
+
+/**
+ * Put shameful CSS in here. Refactor later.
+ * http://csswizardry.com/2013/04/shame-css/
+ */
+
+/**
+ * Use the CSS Wizardry hack namespace
+ * eg ._footer-mobile {}
+ * https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/#hack-namespaces-_
+ */
+
+/**
+ * list-bare.css example of CSS object in /src/modules/objects/,
+ * used in header.html and footer.html
+ */
+
+label {
+  display: block;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 1rem;
+}
+
+input, button {
+  font-size: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex50 {
+  display: flex;
+}
+
+.flex50 > * {
+  flex-basis: 50%;
+}
+
+.o-flex {
+  display: flex;
+}
+
+.o-flex--half > * {
+  flex-basis: 50%;
+}
+
+
+.contact img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.header {
+  z-index: 100;
+}

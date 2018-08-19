@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Home page static carousel
+   ==========================================================================*/
+
+.carousel {
+  display: flex;
+  margin: 0 0 2rem;;
+  padding: 0;
+}
+
+.carousel > * {
+  height: 184px;
+  margin: 1rem 0.4rem 1rem 0;
+}
+
+.carousel > *:nth-child(3) {
+  margin-right: 0;
+}
+
+.carousel a {
+  position: relative;
+}
+
+.carousel a:link,
+.carousel a:visited {
+  color: white;
+}
+
+.carousel p:hover {
+  background-color: rgb(0,0,0,0.7);
+}
+
+.carousel img {
+  display: inline;
+}
+
+.carousel p {
+  bottom: 5px;
+  margin: 0;
+  padding: 0.2rem .5rem;
+  position: absolute;
+  width: 99%;
+}

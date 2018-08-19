@@ -1,0 +1,25 @@
+<header class="header" role="banner">
+  <div class="h-card o-content header__content">
+    <h2 class="u-hiddenvisually">
+      <a class="p-org u-url" rel="me" href="/" title="Link to home page">{{ .Site.Title }}</a>
+    </h2>
+    <a href="/" title="Link to home page">
+      <img class="u-photo" src="/assets/img/logo.png" alt="GJ Mats Crane & Timber Mats logo">
+    </a>
+    <h3 class="p-note u-hiddenvisually">{{ .Site.Params.Description }}</h3>
+    <p>Call: <a href="tel:+447896265981">07896 265 981</a><br>
+    Call: <a href="tel:+448007747751">0800 774 7751</a></p>
+  </div>
+  <nav class="nav nav--wo nav--header">
+    <div class="o-content">
+      {{ $currentPage := . }}
+      <ol class="o-list-bare nav__list">
+        {{ range .Site.Menus.main }}
+        <li>
+          <a class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}is-active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ol>
+    </div>
+  </nav>
+</header>
